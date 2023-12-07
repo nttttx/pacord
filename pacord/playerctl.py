@@ -17,7 +17,7 @@ def _run(cmd: str) -> str:
 
 
 def any_player_is_availible() -> bool:
-    """Check if any player runninng"""
+    """Check if any player is running"""
     result = _run("playerctl -l")
     if result in ["No players found", ""]:
         return False
