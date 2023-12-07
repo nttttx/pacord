@@ -29,7 +29,7 @@ RPC = Presence(client_id)
 RPC.connect()
 
 
-def update(player: Player):
+def update(player: Player) -> None:
     """Push info"""
     RPC.update(
         state=f"{player.state} in {player.name}",
